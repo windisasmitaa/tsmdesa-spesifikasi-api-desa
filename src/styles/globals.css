@@ -1,10 +1,19 @@
 @import 'tailwindcss';
 
 @theme {
-    --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --color-primary: #f67280;
-    --color-primary-content: #101828;
-    --color-complementary: #355c7d;
+    /* Mengubah font utama menjadi Plus Jakarta Sans */
+    --font-sans: 'Plus Jakarta Sans', 'Inter Variable', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* Mengikuti standar warna Pemerintah Kabupaten Tasikmalaya */
+    --color-primary: #FFC42F;          /* Kuning Utama */
+    --color-primary-content: #075463;  /* Biru Tua (Kontras untuk teks di atas warna kuning) */
+    --color-complementary: #12A64E;    /* Hijau Sekunder */
+    
+    /* Warna tambahan dari Ekosistem Design System Tasikmalaya */
+    --color-tasik-blue-dark: #075463;  /* Biru Tua */
+    --color-tasik-blue-mid: #0A9AB0;   /* Biru Toska */
+    --color-tasik-blue-light: #75B9CA; /* Biru Muda */
+
     --background-image-noise: linear-gradient(
             to bottom,
             color-mix(in oklab, var(--color-gray-950) 0%, transparent),
